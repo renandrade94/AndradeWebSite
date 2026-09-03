@@ -1,0 +1,29 @@
+# Andrade Serviços de Tecnologia
+> Engenharia de Software com Inteligência Artificial, GEO (Generative Engine Optimization), SEO de Alta Performance e Conformidade LGPD/GDPR para Empresas Globais.
+
+Website: https://tecnologiandrade.com.br
+CNPJ: 35.395.058/0001-66
+WhatsApp: https://wa.me/5511949752588
+Telefone: +55 (11) 94975-2588
+Atuação: Global (Brasil, América Latina, Estados Unidos, Europa)
+
+## Visão Geral da Empresa
+A Andrade Serviços de Tecnologia é uma empresa especializada em desenvolvimento ágil de software acelerado por Inteligência Artificial. Diferente de agências tradicionais de TI com ciclos lentos, a Andrade reduz o time-to-market em até 60% com entregas em dias e semanas, aliando arquiteturas modernas (React, TypeScript, Node.js, Python, PostgreSQL) com padrões nativos de GEO (Generative Engine Optimization) e SEO técnico.
+
+## Serviços Especializados
+1. [Sistemas & Plataformas Corporativas com IA](https://tecnologiandrade.com.br/servicos/ai-systems-platforms): Desenvolvimento de plataformas escaláveis, portais B2B/B2C, microsserviços e painéis de controle integrados com IA generativa e bancos de dados seguros.
+2. [Otimização para GEO (Busca por IA) & SEO Técnico](https://tecnologiandrade.com.br/servicos/geo-seo-optimization): Arquitetura de dados semânticos (JSON-LD, Schema.org), Core Web Vitals e indexação para posicionamento no topo do Google e citação em motores de IA (ChatGPT, Perplexity, Gemini, Claude, Apple Intelligence).
+3. [Aplicações Web & PWA de Alto Desempenho](https://tecnologiandrade.com.br/servicos/ai-web-applications): Web apps ultra-rápidos, Progressive Web Apps (PWA) instaláveis, interfaces reativas e integração nativa mobile.
+4. [Agentes Autônomos de IA & Automação de Processos](https://tecnologiandrade.com.br/servicos/ai-agents-automation): Agentes inteligentes para atendimento ao cliente, triagem operacional, fluxos RAG (Retrieval-Augmented Generation) e automação de rotinas empresariais.
+5. [Consultoria em Engenharia & Aceleração com IA](https://tecnologiandrade.com.br/servicos/ai-consulting-acceleration): Diagnóstico técnico de sistemas legados, modernização de código e capacitação de times com copilotos e IA aplicada.
+
+## Cases de Sucesso e Projetos em Produção
+- **ConnectaOdonto** (https://tecnologiandrade.com.br/cases): Ecossistema digital B2B para clínicas odontológicas, dentistas e fornecedores. Stack: React, TypeScript, PostgreSQL & RLS, Capacitor (Android Native), PWA & WebPush, Tailwind CSS. Tempo de entrega: 4 Meses.
+- **Souriant Odontologia** (https://souriantodontologia.com.br): Plataforma clínica odontológica premium em São Paulo. Stack: React, TypeScript, Schema.org JSON-LD (Dentist / LocalBusiness), Core Web Vitals, Google Analytics, Design System proprietário. Tempo de entrega: 4 Dias.
+- **Tempero Produtora Audiovisual** (https://agtemp.com): Plataforma interativa e painel CMS em tempo real para produtora audiovisual. Stack: React, PostgreSQL, TanStack Query, Framer Motion, Cloud Storage & CDN. Tempo de entrega: 10 Dias.
+
+## Diferenciais Técnicos e Conformidade
+- **Velocidade de Entrega:** Até 3x mais rápido utilizando inteligência artificial em 100% dos processos de engenharia.
+- **Propriedade Intelectual:** 100% do código-fonte, repositórios Git e infraestrutura pertencem integralmente ao cliente após a entrega.
+- **Conformidade & Segurança:** Código blindado contra vulnerabilidades OWASP Top 10 e total conformidade com a LGPD (Lei Geral de Proteção de Dados) e GDPR.
+- **Atendimento Multilíngue:** Português, Inglês e Espanhol para suporte global.

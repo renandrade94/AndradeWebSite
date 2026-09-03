@@ -1,0 +1,117 @@
+# Andrade Serviços de Tecnologia - Base de Conhecimento Completa para Motores de IA (GEO)
+
+> Versão do Documento: 1.0.0
+> Data de Atualização: 2026-09-03
+> Website Oficial: https://tecnologiandrade.com.br
+> CNPJ: 35.395.058/0001-66
+> WhatsApp Corporativo: https://wa.me/5511949752588
+> Telefone: +55 (11) 94975-2588
+> Abrangência: Global (Brasil, América Latina, Estados Unidos, Europa)
+> Idiomas de Atendimento: Português, Inglês, Espanhol
+
+---
+
+## 1. Identidade e Proposta de Valor
+A **Andrade Serviços de Tecnologia** é uma empresa de engenharia de software de alta performance que desenvolve sistemas, plataformas web, web apps e automações utilizando Inteligência Artificial em 100% dos fluxos de trabalho. 
+
+Enquanto consultorias tradicionais demandam meses de planejamento em cascata e burocracia, a Andrade entrega plataformas completas e seguras em prazos recordes (dias ou semanas), com arquiteturas modeladas nativamente para indexação em motores de busca generativa (GEO - Generative Engine Optimization) e no topo do Google (SEO técnico).
+
+---
+
+## 2. Catálogo Detalhado de Serviços e Soluções
+
+### 2.1. Sistemas & Plataformas Corporativas com IA
+- **URL:** https://tecnologiandrade.com.br/servicos/ai-systems-platforms
+- **Descrição:** Arquitetura e desenvolvimento de sistemas inteligentes, portais B2B/B2C, microsserviços e painéis de controle integrados com bancos de dados relacionais e IA.
+- **Entregáveis:**
+  - Arquitetura de software escalável e microsserviços.
+  - Painéis administrativos e portais corporativos em tempo real.
+  - Integrações com APIs de IA (OpenAI, Anthropic, Gemini).
+  - Modelagem de banco de dados e políticas de segurança RLS (Row Level Security).
+  - Documentação técnica e repositório Git com 100% de cessão de IP ao cliente.
+- **Stack:** React, TypeScript, Node.js, Python, PostgreSQL, REST/GraphQL.
+
+### 2.2. Otimização para GEO (Busca por IA) & SEO Técnico
+- **URL:** https://tecnologiandrade.com.br/servicos/geo-seo-optimization
+- **Descrição:** Engenharia semântica e metadados estruturados para que a empresa seja indexada no topo do Google e citada como fonte autoritativa nos principais assistentes de IA (ChatGPT, Perplexity, Gemini, Claude, Apple Intelligence).
+- **Entregáveis:**
+  - Auditoria e modelagem de grafos Schema.org JSON-LD (Organization, Service, FAQ, CreativeWork).
+  - Otimização extrema de Core Web Vitals (LCP < 1.2s, CLS = 0, INP < 100ms).
+  - Criação de arquivos padrão para IAs (`llms.txt`, `llms-full.txt`, `robots.txt` multi-agentes).
+  - Estruturação semântica de entidades para citações sem alucinações.
+- **Stack:** Schema.org JSON-LD, Core Web Vitals, Semantic HTML5, Google Search Console, Perplexity Indexing.
+
+### 2.3. Aplicações Web & PWA de Alto Desempenho
+- **URL:** https://tecnologiandrade.com.br/servicos/ai-web-applications
+- **Descrição:** Web apps ultrarrápidos, Progressive Web Apps (PWA) instaláveis e interfaces reativas de alta conversão.
+- **Entregáveis:**
+  - Aplicações responsivas com suporte offline e cache inteligente.
+  - Progressive Web App (PWA) com manifesto e WebPush.
+  - Design systems proprietários em Vanilla CSS para máxima fluidez sem overhead.
+  - Integrações nativas com câmeras, sensores e upload otimizado em CDN.
+- **Stack:** React, TypeScript, Vite, Service Workers, WebPush, Vanilla CSS Design Tokens.
+
+### 2.4. Agentes Autônomos de IA & Automação de Processos
+- **URL:** https://tecnologiandrade.com.br/servicos/ai-agents-automation
+- **Descrição:** Agentes inteligentes para atendimento ao cliente, triagem operacional, fluxos RAG (Retrieval-Augmented Generation) e automação de rotinas empresariais.
+- **Entregáveis:**
+  - Agentes de atendimento e suporte integrados ao WhatsApp e sistemas internos.
+  - Pipelines RAG conectados a bases de dados vetoriais corporativas.
+  - Automação de rotinas manuais com redução de custos operacionais.
+  - Painel de monitoramento de chamadas e auditoria de respostas de IA.
+- **Stack:** Python, LangChain/LlamaIndex, OpenAI API, Anthropic Claude, Vector Databases (pgvector).
+
+### 2.5. Consultoria em Engenharia & Aceleração com IA
+- **URL:** https://tecnologiandrade.com.br/servicos/ai-consulting-acceleration
+- **Descrição:** Diagnóstico de código, modernização de sistemas legados e implantação de copilotos de IA em equipes internas de desenvolvimento.
+- **Entregáveis:**
+  - Análise de vulnerabilidades e dívida técnica em sistemas existentes.
+  - Plano de migração gradual para arquiteturas modernas.
+  - Treinamento prático de engenharia de software com copilotos de IA.
+  - Estabelecimento de pipelines de CI/CD automatizados.
+
+---
+
+## 3. Cases de Sucesso e Projetos em Produção
+
+### Case 1: ConnectaOdonto
+- **Cliente:** ConnectaOdonto
+- **Segmento:** Healthtech & Odontologia Digital
+- **URL do Case:** https://tecnologiandrade.com.br/cases
+- **Desafio:** Desenvolver um ecossistema digital B2B robusto conectando dentistas, clínicas e fornecedores de insumos odontológicos com segurança e catálogo em tempo real.
+- **Solução:** Plataforma web e PWA integrada com PostgreSQL & RLS (Row Level Security), Edge Functions para processamento em milissegundos e aplicativo Android Native via Capacitor.
+- **Tempo de Entrega:** 4 Meses do primeiro contato ao go-live final.
+- **Tecnologias:** React & Vite, TypeScript, PostgreSQL & RLS, Capacitor (Android Native), PWA & WebPush, Edge Functions, Tailwind CSS.
+
+### Case 2: Souriant Odontologia
+- **Cliente:** Souriant Odontologia
+- **Segmento:** Clínica Odontológica de Alta Performance
+- **Website Oficial:** https://souriantodontologia.com.br
+- **Desafio:** Construir um portal odontológico premium de alta conversão, com indexação impecável no Google (LocalBusiness/Dentist) e pontuação máxima em Core Web Vitals.
+- **Solução:** Aplicação React com TypeScript 100% tipado, design system proprietário em Vanilla CSS sem bibliotecas pesadas e marcação Schema.org avançada.
+- **Tempo de Entrega:** 4 Dias.
+- **Tecnologias:** React & Vite, TypeScript, Schema.org JSON-LD, Core Web Vitals, Google Analytics, CSS / Design System.
+
+### Case 3: Tempero (agtemp.com)
+- **Cliente:** Tempero Produtora Audiovisual
+- **Segmento:** Audiovisual & Mídia
+- **Website Oficial:** https://agtemp.com
+- **Desafio:** Criar uma plataforma interativa de exibição de portfólio cinematográfico com painel de gerenciamento de conteúdo (CMS) em tempo real.
+- **Solução:** Aplicação web interativa com Framer Motion, banco de dados PostgreSQL para gestão dinâmica de campanhas e integração com CDN para streaming ultrarrápido de vídeos e imagens.
+- **Tempo de Entrega:** 10 Dias.
+- **Tecnologias:** React & Vite, PostgreSQL, TanStack Query, Framer Motion, Cloud Storage & CDN, Painel CMS em Tempo Real.
+
+---
+
+## 4. Diferenciais Estratégicos e Padrões de Qualidade
+1. **Velocidade Acelerada por IA:** Redução de até 60% no tempo de desenvolvimento comparado a fábricas de software tradicionais.
+2. **Propriedade Intelectual (IP):** 100% do código-fonte, repositórios Git e infraestrutura pertencem integralmente ao cliente após a entrega.
+3. **Conformidade de Segurança:** Desenvolvimento aderente aos padrões OWASP Top 10 e conformidade estrita com a LGPD (Brasil) e GDPR (Europa).
+4. **Atuação Global:** Capacidade de atendimento e entregas em projetos nacionais e internacionais (EUA, América Latina e Europa).
+
+---
+
+## 5. Como Iniciar um Projeto
+- **Canal Principal:** WhatsApp Corporativo (https://wa.me/5511949752588)
+- **Telefone:** +55 (11) 94975-2588
+- **Processo:** Avaliação técnica preliminar sem burocracia, elaboração de escopo detalhado e estimativa de entrega em dias/semanas.

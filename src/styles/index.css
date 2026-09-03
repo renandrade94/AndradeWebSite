@@ -1,0 +1,296 @@
+@import './animations.css';
+
+:root {
+  /* Sober, Luxurious Matte Carbon Palette (Apple / Linear / Minimal Luxury) */
+  --bg-dark-base: #090a0f;
+  --bg-dark-surface: #0f1219;
+  --bg-dark-card: #131722;
+  --bg-dark-card-hover: #181d2b;
+
+  /* Solid, Refined Accent Colors - Petroleum Teal (WCAG AAA 11.2:1 Compliant) */
+  --color-brand: #2dd4bf;
+  --color-brand-muted: #0f766e;
+  --color-brand-dark: #044e46;
+  --color-success: #2dd4bf;
+  --primary-cyan: #2dd4bf;
+  --primary-petrol: #2dd4bf;
+  --primary-petrol-dark: #044e46;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+
+  /* Typography Colors */
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --text-white: #ffffff;
+
+  /* Clean Hairline Borders (Solid, Flat & Precise) */
+  --border-hairline: rgba(255, 255, 255, 0.08);
+  --border-hairline-hover: rgba(255, 255, 255, 0.16);
+  --border-subtle: #1e2330;
+
+  /* Fonts */
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Layout & Spacing */
+  --container-max: 1200px;
+  --header-height: 70px;
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+}
+
+/* Reset & Base Styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  color-scheme: dark;
+  background-color: var(--bg-dark-base);
+  color: var(--text-main);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  background-color: var(--bg-dark-base);
+  /* Flat, Clean, Sober Dark Finish */
+  line-height: 1.6;
+}
+
+/* Custom Minimal Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-dark-base);
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+/* Typography Utilities - Solid, Crisp & Editorial */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-white);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+p {
+  color: var(--text-muted);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+/* Clean, Sober Cards (Zero Neon Glow, Solid Matte Surface) */
+.glass-card {
+  background: var(--bg-dark-card);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-lg);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(45, 212, 191, 0.35);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Layout Utilities */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section-padding {
+  padding: clamp(3.5rem, 6vw, 5.5rem) 0;
+}
+
+.section-header {
+  margin-bottom: clamp(2rem, 4vw, 3.5rem);
+}
+
+.section-header p {
+  font-size: clamp(0.95rem, 1.6vw, 1.1rem);
+  color: var(--text-muted);
+  max-width: 640px;
+  line-height: 1.6;
+  margin-top: 0.6rem;
+}
+
+.text-section-title {
+  font-size: clamp(1.8rem, 3.5vw, 2.75rem);
+  color: #ffffff;
+  margin-top: 0.6rem;
+}
+
+/* Solid Badges (No Neon) */
+.badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.85rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #d4d4d8;
+  letter-spacing: 0.01em;
+}
+
+.badge-pill svg {
+  color: #2dd4bf;
+  stroke: #2dd4bf;
+  flex-shrink: 0;
+}
+
+.badge-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.6rem;
+  background: #181d2b;
+  border: 1px solid #273147;
+  border-radius: var(--radius-xs);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #94a3b8;
+  font-family: var(--font-mono);
+}
+
+/* Status Indicator Dot (Solid, No Glow) */
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-success);
+  display: inline-block;
+}
+
+/* Tactile Flat Buttons (Solid, Sober, Luxury) */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: #ffffff;
+  color: #090a0f;
+}
+
+.btn-primary:hover {
+  background: #e4e4e7;
+}
+
+.btn-secondary {
+  background: #181d2b;
+  color: #f4f4f5;
+  border: 1px solid var(--border-hairline);
+}
+
+.btn-secondary:hover {
+  background: #232a3d;
+  border-color: var(--border-hairline-hover);
+}
+
+.btn-lg {
+  padding: 0.85rem 1.85rem;
+  font-size: 0.975rem;
+}
+
+/* Responsive Grids */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-4,
+  .grid-3,
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+  .section-padding {
+    padding: 3rem 0;
+  }
+}
+
+/* Sleek Compact Horizontal CTA Card */
+.cta-horizontal-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.6rem 2.25rem;
+  background-color: var(--bg-dark-surface);
+  border-top: 2px solid #2dd4bf;
+  border-radius: var(--radius-lg);
+}
+
+@media (max-width: 768px) {
+  .cta-horizontal-card {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: left;
+    gap: 1.25rem;
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,128 @@
+/* Mobile First Responsive Tweaks & Breakpoints */
+
+/* Grids */
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+/* Tablet Up (>= 640px) */
+@media (min-width: 640px) {
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop Up (>= 1024px) */
+@media (min-width: 1024px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Responsive Visibility Utilities */
+.hide-mobile {
+  display: flex !important;
+}
+
+.show-mobile-flex {
+  display: none !important;
+}
+
+@media (max-width: 868px) {
+  .hide-mobile {
+    display: none !important;
+  }
+  .show-mobile-flex {
+    display: flex !important;
+    align-items: center;
+  }
+}
+
+/* Mobile Floating Bottom Conversion Bar */
+.mobile-floating-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(9, 10, 15, 0.96);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-top: 1px solid var(--border-hairline);
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  z-index: 900;
+  box-shadow: 0 -8px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* Hide mobile floating bar on desktop */
+@media (min-width: 869px) {
+  .mobile-floating-bar {
+    display: none !important;
+  }
+}
+
+@media (max-width: 868px) {
+  .site-footer {
+    padding-bottom: 5.5rem !important;
+  }
+}
+
+/* Floating WhatsApp Desktop Widget (Sober & High Contrast) */
+.floating-whatsapp-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #090a0f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-hairline);
+  z-index: 850;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.floating-whatsapp-btn:hover {
+  transform: translateY(-2px);
+  background: #e2e8f0;
+}
+
+/* Hide floating round button on mobile to avoid duplicate CTAs with bottom bar */
+@media (max-width: 868px) {
+  .floating-whatsapp-btn {
+    display: none !important;
+  }
+}

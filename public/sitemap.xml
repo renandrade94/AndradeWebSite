@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Home Page -->
+  <url>
+    <loc>https://tecnologiandrade.com.br/</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://tecnologiandrade.com.br/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://tecnologiandrade.com.br/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tecnologiandrade.com.br/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tecnologiandrade.com.br/" />
+  </url>
+
+  <!-- Services Hub Page -->
+  <url>
+    <loc>https://tecnologiandrade.com.br/servicos</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://tecnologiandrade.com.br/servicos" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://tecnologiandrade.com.br/servicos?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tecnologiandrade.com.br/servicos?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tecnologiandrade.com.br/servicos" />
+  </url>
+
+  <!-- Case Studies Page -->
+  <url>
+    <loc>https://tecnologiandrade.com.br/cases</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://tecnologiandrade.com.br/cases" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://tecnologiandrade.com.br/cases?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tecnologiandrade.com.br/cases?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tecnologiandrade.com.br/cases" />
+  </url>
+
+  <!-- Service 1: AI Systems & Platforms -->
+  <url>
+    <loc>https://tecnologiandrade.com.br/servicos/ai-systems-platforms</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://tecnologiandrade.com.br/servicos/ai-systems-platforms" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://tecnologiandrade.com.br/servicos/ai-systems-platforms?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tecnologiandrade.com.br/servicos/ai-systems-platforms?lang=es" />
+  </url>
+
+  <!-- Service 2: GEO & SEO Optimization -->
+  <url>
+    <loc>https://tecnologiandrade.com.br/servicos/geo-seo-optimization</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://tecnologiandrade.com.br/servicos/geo-seo-optimization" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://tecnologiandrade.com.br/servicos/geo-seo-optimization?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tecnologiandrade.com.br/servicos/geo-seo-optimization?lang=es" />
+  </url>
+
+  <!-- Service 3: High-Performance Web Applications -->
+  <url>
+    <loc>https://tecnologiandrade.com.br/servicos/ai-web-applications</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://tecnologiandrade.com.br/servicos/ai-web-applications" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://tecnologiandrade.com.br/servicos/ai-web-applications?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tecnologiandrade.com.br/servicos/ai-web-applications?lang=es" />
+  </url>
+
+  <!-- Service 4: AI Agents & Automation -->
+  <url>
+    <loc>https://tecnologiandrade.com.br/servicos/ai-agents-automation</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://tecnologiandrade.com.br/servicos/ai-agents-automation" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://tecnologiandrade.com.br/servicos/ai-agents-automation?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tecnologiandrade.com.br/servicos/ai-agents-automation?lang=es" />
+  </url>
+
+  <!-- Service 5: AI Consulting & Modernization -->
+  <url>
+    <loc>https://tecnologiandrade.com.br/servicos/ai-consulting-acceleration</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://tecnologiandrade.com.br/servicos/ai-consulting-acceleration" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://tecnologiandrade.com.br/servicos/ai-consulting-acceleration?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tecnologiandrade.com.br/servicos/ai-consulting-acceleration?lang=es" />
+  </url>
+
+  <!-- About Us Page -->
+  <url>
+    <loc>https://tecnologiandrade.com.br/sobre</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://tecnologiandrade.com.br/sobre" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://tecnologiandrade.com.br/sobre?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tecnologiandrade.com.br/sobre?lang=es" />
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://tecnologiandrade.com.br/contato</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://tecnologiandrade.com.br/contato" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://tecnologiandrade.com.br/contato?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tecnologiandrade.com.br/contato?lang=es" />
+  </url>
+
+</urlset>

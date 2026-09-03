@@ -1,0 +1,17 @@
+{
+  "name": "Andrade Serviços de Tecnologia",
+  "short_name": "Andrade Tech",
+  "description": "Engenharia de Software com Inteligência Artificial, GEO & SEO para Empresas Globais",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07090e",
+  "theme_color": "#07090e",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

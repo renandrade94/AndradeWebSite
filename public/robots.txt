@@ -1,0 +1,70 @@
+# Robots.txt for Andrade Serviços de Tecnologia (https://tecnologiandrade.com.br)
+User-agent: *
+Allow: /
+
+# Standard Search Engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Generative Engine Optimization (GEO) & AI Search Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# AI Information Standards
+# See https://llmstxt.org
+# llms.txt: https://tecnologiandrade.com.br/llms.txt
+# llms-full.txt: https://tecnologiandrade.com.br/llms-full.txt
+
+# Sitemap Location
+Sitemap: https://tecnologiandrade.com.br/sitemap.xml

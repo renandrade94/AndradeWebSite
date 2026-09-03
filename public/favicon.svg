@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
+  <!-- White rounded badge container -->
+  <rect width="128" height="128" rx="28" fill="#FFFFFF"/>
+  
+  <!-- High-contrast bold 'A' centered -->
+  <text x="64" y="67" text-anchor="middle" dominant-baseline="central" fill="#090a0f" font-family="'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="72">A</text>
+</svg>
