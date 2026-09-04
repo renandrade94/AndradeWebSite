@@ -1,0 +1,11 @@
+# Security Policy & Vulnerability Disclosure for Andrade Serviços de Tecnologia
+# Defined by RFC 9116: https://www.rfc-editor.org/rfc/rfc9116
+
+Contact: https://tecnologiandrade.com.br/contato
+Contact: mailto:contato@tecnologiandrade.com.br
+Contact: tel:+55-11-94975-2588
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: pt-BR, en, es
+Canonical: https://tecnologiandrade.com.br/.well-known/security.txt
+Policy: https://tecnologiandrade.com.br/sobre
+Acknowledgments: https://tecnologiandrade.com.br/cases
