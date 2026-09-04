@@ -10,6 +10,7 @@ import {
   ArrowRight,
 } from 'lucide-react';
 import { SEO } from '../components/common/SEO';
+import { Breadcrumbs } from '../components/common/Breadcrumbs';
 import { Differentials } from '../components/sections/Differentials';
 import { useLanguage } from '../context/LanguageContext';
 import { createWhatsAppUrl } from '../data/companyInfo';
@@ -32,6 +33,9 @@ export const AboutPage = () => {
       />
 
       <div className="container">
+        {/* Breadcrumb Navigation */}
+        <Breadcrumbs items={[{ label: t('nav.about') }]} marginBottom="2rem" />
+
         {/* Page Header */}
         <div style={{ maxWidth: '820px', margin: '0 auto 4rem auto', textAlign: 'center' }}>
           <div className="badge-pill" style={{ marginBottom: '1.25rem' }}>

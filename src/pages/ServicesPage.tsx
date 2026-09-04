@@ -8,12 +8,12 @@ import {
   Cpu,
   ArrowRight,
   CheckCircle,
-  ChevronRight,
   Layers,
 } from 'lucide-react';
 import { WhatsAppIcon } from '../components/common/WhatsAppIcon';
 import { servicesData, getLocalizedService, type ServiceItem } from '../data/services';
 import { SEO } from '../components/common/SEO';
+import { Breadcrumbs } from '../components/common/Breadcrumbs';
 import { useLanguage } from '../context/LanguageContext';
 
 import { createWhatsAppUrl } from '../data/companyInfo';
@@ -90,26 +90,10 @@ export const ServicesPage = () => {
 
       <div className="container">
         {/* Breadcrumb Navigation */}
-        <nav
-          aria-label="Breadcrumb"
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.5rem',
-            fontSize: '0.85rem',
-            color: 'var(--text-muted)',
-            marginBottom: '2rem',
-          }}
-        >
-          <Link to="/" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>
-            {t('nav.home')}
-          </Link>
-          <ChevronRight size={14} />
-          <span style={{ color: 'var(--primary-cyan)', fontWeight: 600 }}>{t('nav.services')}</span>
-        </nav>
+        <Breadcrumbs items={[{ label: t('nav.services') }]} marginBottom="2rem" />
 
         {/* Page Header */}
-        <div style={{ maxWidth: '840px', marginBottom: '3.5rem' }}>
+        <div style={{ maxWidth: '840px', margin: '0 auto 3.5rem auto', textAlign: 'center' }}>
           <h1
             style={{
               fontSize: 'clamp(2.2rem, 5vw, 3.4rem)',
@@ -128,6 +112,8 @@ export const ServicesPage = () => {
               fontSize: 'clamp(1rem, 2vw, 1.2rem)',
               color: 'var(--text-muted)',
               lineHeight: 1.7,
+              maxWidth: '720px',
+              margin: '0 auto',
             }}
           >
             {t('services.subtitle')}
@@ -139,6 +125,7 @@ export const ServicesPage = () => {
           style={{
             display: 'flex',
             flexWrap: 'wrap',
+            justifyContent: 'center',
             gap: '0.75rem',
             marginBottom: '3rem',
             borderBottom: '1px solid rgba(255, 255, 255, 0.08)',

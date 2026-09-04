@@ -1,7 +1,6 @@
-import { Link } from 'react-router-dom';
-import { ChevronRight } from 'lucide-react';
 import { WhatsAppIcon } from '../components/common/WhatsAppIcon';
 import { SEO } from '../components/common/SEO';
+import { Breadcrumbs } from '../components/common/Breadcrumbs';
 import { createWhatsAppUrl } from '../data/companyInfo';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -24,23 +23,7 @@ export const ContactPage = () => {
 
       <div className="container">
         {/* Breadcrumb Navigation */}
-        <nav
-          aria-label="Breadcrumb"
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.5rem',
-            fontSize: '0.85rem',
-            color: 'var(--text-muted)',
-            marginBottom: '2.5rem',
-          }}
-        >
-          <Link to="/" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>
-            {t('nav.home')}
-          </Link>
-          <ChevronRight size={14} />
-          <span style={{ color: '#2dd4bf', fontWeight: 600 }}>{t('nav.contact')}</span>
-        </nav>
+        <Breadcrumbs items={[{ label: t('nav.contact') }]} marginBottom="2.5rem" />
 
         {/* Page Header */}
         <div style={{ maxWidth: '820px', margin: '0 auto 3.5rem auto', textAlign: 'center' }}>

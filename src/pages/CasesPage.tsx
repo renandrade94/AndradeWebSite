@@ -5,6 +5,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { createWhatsAppUrl } from '../data/companyInfo';
 import { WhatsAppIcon } from '../components/common/WhatsAppIcon';
 import { SEO } from '../components/common/SEO';
+import { Breadcrumbs } from '../components/common/Breadcrumbs';
 import connectaLogo from '../assets/images/connectaodonto-symbol.png';
 import souriantLogo from '../assets/images/souriant-logo.png';
 import temperoLogo from '../assets/images/tempero-logo.png';
@@ -73,6 +74,9 @@ export const CasesPage: React.FC = () => {
       />
 
       <div className="container">
+        {/* Breadcrumb Navigation */}
+        <Breadcrumbs items={[{ label: t('nav.cases') }]} marginBottom="2rem" />
+
         {/* Page Header */}
         <div style={{ maxWidth: '840px', margin: '0 auto 3rem auto', textAlign: 'center' }}>
           <div className="badge-pill" style={{ marginBottom: '1rem' }}>

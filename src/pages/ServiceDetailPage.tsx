@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useParams, Link, Navigate } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import {
   Code2,
   Search,
@@ -7,7 +7,6 @@ import {
   Workflow,
   Cpu,
   CheckCircle,
-  ChevronRight,
   ChevronDown,
   ShieldCheck,
   Zap,
@@ -16,6 +15,7 @@ import {
 import { WhatsAppIcon } from '../components/common/WhatsAppIcon';
 import { getServiceById, getLocalizedService, type ServiceItem } from '../data/services';
 import { SEO } from '../components/common/SEO';
+import { Breadcrumbs } from '../components/common/Breadcrumbs';
 import { createWhatsAppUrl } from '../data/companyInfo';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -99,27 +99,13 @@ export const ServiceDetailPage = () => {
 
       <div className="container">
         {/* Breadcrumb Navigation */}
-        <nav
-          aria-label="Breadcrumb"
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.5rem',
-            fontSize: '0.85rem',
-            color: 'var(--text-muted)',
-            marginBottom: '2.5rem',
-          }}
-        >
-          <Link to="/" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>
-            {t('nav.home')}
-          </Link>
-          <ChevronRight size={14} />
-          <Link to="/servicos" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>
-            {t('nav.services')}
-          </Link>
-          <ChevronRight size={14} />
-          <span style={{ color: 'var(--primary-cyan)', fontWeight: 600 }}>{loc.title}</span>
-        </nav>
+        <Breadcrumbs
+          items={[
+            { label: t('nav.services'), to: '/servicos' },
+            { label: loc.title },
+          ]}
+          marginBottom="2.5rem"
+        />
 
         {/* Hero Section of Service Detail */}
         <div className="grid-2" style={{ gap: '3.5rem', alignItems: 'center', marginBottom: '5rem' }}>
