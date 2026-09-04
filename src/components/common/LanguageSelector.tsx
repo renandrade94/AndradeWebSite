@@ -72,6 +72,7 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({ dropUp = fal
             width: '160px',
             background: 'rgba(12, 17, 32, 0.98)',
             backdropFilter: 'blur(16px)',
+            WebkitBackdropFilter: 'blur(16px)',
             border: '1px solid #0f766e',
             borderRadius: '12px',
             boxShadow: '0 10px 30px rgba(0, 0, 0, 0.6)',

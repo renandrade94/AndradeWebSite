@@ -60,15 +60,18 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   min-height: 100vh;
+  min-height: 100dvh;
   overflow-x: hidden;
   position: relative;
   background-color: var(--bg-dark-base);
   /* Flat, Clean, Sober Dark Finish */
   line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
 }
 
 /* Custom Minimal Scrollbar */

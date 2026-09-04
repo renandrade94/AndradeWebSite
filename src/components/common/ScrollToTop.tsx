@@ -11,11 +11,11 @@ export const ScrollToTop = () => {
   const { pathname, search } = useLocation();
 
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'instant',
-    });
+    try {
+      window.scrollTo(0, 0);
+    } catch {
+      // Fallback
+    }
 
     if (typeof window.gtag === 'function') {
       window.gtag('config', 'G-NHBCLRNZ8E', {

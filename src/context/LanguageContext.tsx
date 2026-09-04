@@ -673,19 +673,35 @@ const LanguageContext = createContext<LanguageContextType>({
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [language, setLanguageState] = useState<Language>(() => {
-    const saved = localStorage.getItem('andrade_lang') as Language;
-    if (saved && (saved === 'pt' || saved === 'en' || saved === 'es')) {
-      return saved;
+    try {
+      if (typeof window !== 'undefined' && window.localStorage) {
+        const saved = localStorage.getItem('andrade_lang') as Language;
+        if (saved && (saved === 'pt' || saved === 'en' || saved === 'es')) {
+          return saved;
+        }
+      }
+    } catch {
+      // Ignore Safari private browsing storage restrictions
     }
-    const navLang = navigator.language.toLowerCase();
-    if (navLang.startsWith('en')) return 'en';
-    if (navLang.startsWith('es')) return 'es';
+    try {
+      const navLang = typeof navigator !== 'undefined' && navigator.language ? navigator.language.toLowerCase() : 'pt';
+      if (navLang.startsWith('en')) return 'en';
+      if (navLang.startsWith('es')) return 'es';
+    } catch {
+      // Ignore
+    }
     return 'pt';
   });
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
-    localStorage.setItem('andrade_lang', lang);
+    try {
+      if (typeof window !== 'undefined' && window.localStorage) {
+        localStorage.setItem('andrade_lang', lang);
+      }
+    } catch {
+      // Ignore Safari private browsing storage restrictions
+    }
   };
 
   const t = (key: string): string => {

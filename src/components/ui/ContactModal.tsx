@@ -67,6 +67,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
         padding: '1rem',
         backgroundColor: 'rgba(5, 7, 12, 0.85)',
         backdropFilter: 'blur(8px)',
+        WebkitBackdropFilter: 'blur(8px)',
       }}
       onClick={onClose}
     >
