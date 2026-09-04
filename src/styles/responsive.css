@@ -74,7 +74,7 @@
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-top: 1px solid var(--border-hairline);
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom, 0px)) 1rem;
   display: flex;
   align-items: center;
   gap: 0.75rem;

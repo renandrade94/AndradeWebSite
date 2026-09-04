@@ -202,15 +202,19 @@ export const Navbar = () => {
             left: 0,
             right: 0,
             bottom: 0,
+            height: 'calc(100dvh - var(--header-height))',
             backgroundColor: '#090a0f',
-            zIndex: 940,
-            padding: '2rem 1.5rem',
+            zIndex: 999,
+            padding: '1.5rem 1.5rem calc(1.5rem + env(safe-area-inset-bottom, 20px)) 1.5rem',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-between',
+            overflowY: 'auto',
+            WebkitOverflowScrolling: 'touch',
           }}
         >
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+          {/* Main Navigation Links */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.15rem' }}>
             {navRoutes.map((route) => (
               <NavLink
                 key={route.to}
@@ -218,7 +222,7 @@ export const Navbar = () => {
                 onClick={closeMenu}
                 style={({ isActive }) => ({
                   color: isActive ? '#ffffff' : 'var(--text-muted)',
-                  fontSize: '1.25rem',
+                  fontSize: '1.2rem',
                   fontWeight: 700,
                   textDecoration: 'none',
                 })}
@@ -228,7 +232,17 @@ export const Navbar = () => {
             ))}
           </div>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', paddingTop: '1.5rem', borderTop: '1px solid rgba(255, 255, 255, 0.08)' }}>
+          {/* Bottom Actions: Language Selector Dropdown & WhatsApp Button */}
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '1rem',
+              paddingTop: '1.25rem',
+              borderTop: '1px solid rgba(255, 255, 255, 0.08)',
+              marginTop: 'auto',
+            }}
+          >
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0.25rem 0' }}>
               <span style={{ color: '#cbd5e1', fontSize: '0.9rem', fontWeight: 600 }}>Idioma / Language</span>
               <LanguageSelector dropUp={true} />
