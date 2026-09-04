@@ -47,6 +47,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://tecnologiandrade.com.br/servicos/ai-systems-platforms" />
     <xhtml:link rel="alternate" hreflang="en" href="https://tecnologiandrade.com.br/servicos/ai-systems-platforms?lang=en" />
     <xhtml:link rel="alternate" hreflang="es" href="https://tecnologiandrade.com.br/servicos/ai-systems-platforms?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tecnologiandrade.com.br/servicos/ai-systems-platforms" />
   </url>
 
   <!-- Service 2: GEO & SEO Optimization -->
@@ -58,6 +59,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://tecnologiandrade.com.br/servicos/geo-seo-optimization" />
     <xhtml:link rel="alternate" hreflang="en" href="https://tecnologiandrade.com.br/servicos/geo-seo-optimization?lang=en" />
     <xhtml:link rel="alternate" hreflang="es" href="https://tecnologiandrade.com.br/servicos/geo-seo-optimization?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tecnologiandrade.com.br/servicos/geo-seo-optimization" />
   </url>
 
   <!-- Service 3: High-Performance Web Applications -->
@@ -69,6 +71,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://tecnologiandrade.com.br/servicos/ai-web-applications" />
     <xhtml:link rel="alternate" hreflang="en" href="https://tecnologiandrade.com.br/servicos/ai-web-applications?lang=en" />
     <xhtml:link rel="alternate" hreflang="es" href="https://tecnologiandrade.com.br/servicos/ai-web-applications?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tecnologiandrade.com.br/servicos/ai-web-applications" />
   </url>
 
   <!-- Service 4: AI Agents & Automation -->
@@ -80,6 +83,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://tecnologiandrade.com.br/servicos/ai-agents-automation" />
     <xhtml:link rel="alternate" hreflang="en" href="https://tecnologiandrade.com.br/servicos/ai-agents-automation?lang=en" />
     <xhtml:link rel="alternate" hreflang="es" href="https://tecnologiandrade.com.br/servicos/ai-agents-automation?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tecnologiandrade.com.br/servicos/ai-agents-automation" />
   </url>
 
   <!-- Service 5: AI Consulting & Modernization -->
@@ -91,6 +95,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://tecnologiandrade.com.br/servicos/ai-consulting-acceleration" />
     <xhtml:link rel="alternate" hreflang="en" href="https://tecnologiandrade.com.br/servicos/ai-consulting-acceleration?lang=en" />
     <xhtml:link rel="alternate" hreflang="es" href="https://tecnologiandrade.com.br/servicos/ai-consulting-acceleration?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tecnologiandrade.com.br/servicos/ai-consulting-acceleration" />
   </url>
 
   <!-- About Us Page -->
@@ -102,6 +107,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://tecnologiandrade.com.br/sobre" />
     <xhtml:link rel="alternate" hreflang="en" href="https://tecnologiandrade.com.br/sobre?lang=en" />
     <xhtml:link rel="alternate" hreflang="es" href="https://tecnologiandrade.com.br/sobre?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tecnologiandrade.com.br/sobre" />
   </url>
 
   <!-- Contact Page -->
@@ -113,6 +119,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://tecnologiandrade.com.br/contato" />
     <xhtml:link rel="alternate" hreflang="en" href="https://tecnologiandrade.com.br/contato?lang=en" />
     <xhtml:link rel="alternate" hreflang="es" href="https://tecnologiandrade.com.br/contato?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tecnologiandrade.com.br/contato" />
   </url>
 
 </urlset>
