@@ -1,3 +1,7 @@
+/**
+ * Andrade Serviços de Tecnologia - Main Application Entry & Routing
+ * Configured for Cloudflare Workers / Pages deployment
+ */
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
