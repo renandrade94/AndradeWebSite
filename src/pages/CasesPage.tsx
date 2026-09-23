@@ -9,6 +9,7 @@ import { Breadcrumbs } from '../components/common/Breadcrumbs';
 import connectaLogo from '../assets/images/connectaodonto-symbol.png';
 import souriantLogo from '../assets/images/souriant-logo.png';
 import temperoLogo from '../assets/images/tempero-logo.png';
+import cestariLogo from '../assets/images/instituto-cestari-logo.png';
 
 export const CasesPage: React.FC = () => {
   const { language, t } = useLanguage();
@@ -16,7 +17,7 @@ export const CasesPage: React.FC = () => {
 
   const filterOptions = [
     { key: 'all', label: t('cases.filter_all') },
-    { key: 'healthtech', label: 'Healthtech & Odontologia' },
+    { key: 'healthtech', label: language === 'en' ? 'Healthtech & Healthcare' : language === 'es' ? 'Healthtech y Salud' : 'Healthtech & Saúde' },
     { key: 'media', label: 'Audiovisual & Mídia' },
   ];
 
@@ -24,6 +25,7 @@ export const CasesPage: React.FC = () => {
     if (caseId === 'connectaodonto') return connectaLogo;
     if (caseId === 'souriant-odontologia') return souriantLogo;
     if (caseId === 'agtemp') return temperoLogo;
+    if (caseId === 'instituto-cestari') return cestariLogo;
     return fallbackUrl || '';
   };
 
@@ -65,6 +67,9 @@ export const CasesPage: React.FC = () => {
           "Desenvolvimento ConnectaOdonto",
           "Case Souriant Odontologia",
           "Case Tempero Produtora Audiovisual",
+          "Case Agtemp",
+          "Case Agtemp Website SEO e CMS",
+          "Case Instituto Cestari",
           "Cases de Sucesso Engenharia de Software",
           "Desenvolvimento com Inteligência Artificial",
           "Plataforma Odontológica B2B",
@@ -187,26 +192,26 @@ export const CasesPage: React.FC = () => {
                           width: 48,
                           height: 48,
                           borderRadius: '12px',
-                          backgroundColor: (caseItem.id === 'souriant-odontologia' || caseItem.id === 'agtemp') ? '#ffffff' : '#181d2b',
-                          border: (caseItem.id === 'souriant-odontologia' || caseItem.id === 'agtemp') ? '1px solid #ffffff' : '1px solid var(--border-hairline)',
+                          backgroundColor: (caseItem.id === 'souriant-odontologia' || caseItem.id === 'agtemp' || caseItem.id === 'instituto-cestari') ? '#ffffff' : '#181d2b',
+                          border: (caseItem.id === 'souriant-odontologia' || caseItem.id === 'agtemp' || caseItem.id === 'instituto-cestari') ? '1px solid #ffffff' : '1px solid var(--border-hairline)',
                           display: 'flex',
                           alignItems: 'center',
                           justifyContent: 'center',
                           overflow: 'hidden',
                           flexShrink: 0,
-                          boxShadow: (caseItem.id === 'souriant-odontologia' || caseItem.id === 'agtemp') ? '0 2px 8px rgba(0,0,0,0.25)' : 'none',
+                          boxShadow: (caseItem.id === 'souriant-odontologia' || caseItem.id === 'agtemp' || caseItem.id === 'instituto-cestari') ? '0 2px 8px rgba(0,0,0,0.25)' : 'none',
                         }}
                       >
                         <img
                           src={getCaseLogo(caseItem.id, caseItem.logoUrl)}
                           alt={`Logotipo ${loc.client} - Case Andrade Serviços de Tecnologia`}
-                          width={caseItem.id === 'souriant-odontologia' ? 38 : 34}
-                          height={caseItem.id === 'souriant-odontologia' ? 38 : 34}
+                          width={caseItem.id === 'agtemp' ? 34 : 38}
+                          height={caseItem.id === 'agtemp' ? 34 : 38}
                           loading="lazy"
                           decoding="async"
                           style={{
-                            width: caseItem.id === 'souriant-odontologia' ? 38 : 34,
-                            height: caseItem.id === 'souriant-odontologia' ? 38 : 34,
+                            width: caseItem.id === 'agtemp' ? 34 : 38,
+                            height: caseItem.id === 'agtemp' ? 34 : 38,
                             objectFit: 'contain',
                           }}
                         />

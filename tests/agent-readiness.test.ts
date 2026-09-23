@@ -91,10 +91,12 @@ describe('Priority 3 & 4: Agent Crawler Reachability & Bot Detection', () => {
     }
   });
 
-  it('should declare Vary: Accept in public/_headers', () => {
+  it('should declare Vary: Accept and allow Cloudflare Insights in public/_headers', () => {
     const headersPath = path.join(rootDir, 'public', '_headers');
     const headers = fs.readFileSync(headersPath, 'utf8');
     assert.match(headers, /Vary:\s*Accept/, '_headers must include Vary: Accept');
+    assert.match(headers, /static\.cloudflareinsights\.com/, 'CSP must allow static.cloudflareinsights.com in script-src');
+    assert.match(headers, /cloudflareinsights\.com/, 'CSP must allow cloudflareinsights.com in connect-src');
   });
 });
 
@@ -250,4 +252,28 @@ describe('Priority 10 & 11: Brand Name Discoverability & Metadata Completeness',
     // Brand Name presence
     assert.match(html, /Andrade Serviços de Tecnologia/, 'Must include full official brand name');
   });
+
+  it('should verify case studies integrity (Agtemp as Website/SEO e CMS and no email)', () => {
+    const casesPath = path.join(rootDir, 'src', 'data', 'cases.ts');
+    const casesContent = fs.readFileSync(casesPath, 'utf8');
+
+    // Agtemp case verification
+    assert.match(casesContent, /id:\s*'agtemp'/, 'agtemp case must exist');
+    assert.match(casesContent, /badge:\s*'Website\/SEO e CMS'/, 'agtemp badge must be Website/SEO e CMS');
+    assert.match(casesContent, /value:\s*'Website\/SEO e CMS'/, 'agtemp metric solution must be Website/SEO e CMS');
+
+    // Instituto Cestari verification
+    assert.match(casesContent, /id:\s*'instituto-cestari'/, 'instituto-cestari case must exist');
+    assert.match(casesContent, /logoUrl:\s*'\/images\/clients\/instituto-cestari-logo\.png'/, 'instituto-cestari must have logoUrl');
+    assert.ok(fs.existsSync(path.join(rootDir, 'public', 'images', 'clients', 'instituto-cestari-logo.png')), 'Logo must exist in public/images/clients');
+    assert.ok(fs.existsSync(path.join(rootDir, 'src', 'assets', 'images', 'instituto-cestari-logo.png')), 'Logo must exist in src/assets/images');
+
+    // Total zero company email across public text and files
+    assert.doesNotMatch(casesContent, /contato@tecnologiandrade\.com\.br/);
+    const indexHtml = fs.readFileSync(path.join(rootDir, 'index.html'), 'utf8');
+    assert.doesNotMatch(indexHtml, /contato@tecnologiandrade\.com\.br/);
+    const llmsTxt = fs.readFileSync(path.join(rootDir, 'public', 'llms.txt'), 'utf8');
+    assert.doesNotMatch(llmsTxt, /contato@tecnologiandrade\.com\.br/);
+  });
 });
+

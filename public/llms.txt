@@ -49,7 +49,8 @@ A Andrade Serviços de Tecnologia é uma empresa especializada em desenvolviment
 ## Cases de Sucesso e Projetos em Produção
 - **ConnectaOdonto** (https://tecnologiandrade.com.br/cases): Ecossistema digital B2B para clínicas odontológicas, dentistas e fornecedores. Stack: React, TypeScript, PostgreSQL & RLS, Capacitor (Android Native), PWA & WebPush, Tailwind CSS. Tempo de entrega: 4 Meses.
 - **Souriant Odontologia** (https://souriantodontologia.com.br): Plataforma clínica odontológica premium em São Paulo. Stack: React, TypeScript, Schema.org JSON-LD (Dentist / LocalBusiness), Core Web Vitals, Google Analytics, Design System proprietário. Tempo de entrega: 4 Dias.
-- **Tempero Produtora Audiovisual** (https://agtemp.com): Plataforma interativa e painel CMS em tempo real para produtora audiovisual. Stack: React, PostgreSQL, TanStack Query, Framer Motion, Cloud Storage & CDN. Tempo de entrega: 10 Dias.
+- **Tempero Produtora Audiovisual (Agtemp)** (https://agtemp.com): Solução Website/SEO e CMS — plataforma dinâmica e painel CMS em tempo real para produtora audiovisual. Stack: React, PostgreSQL, TanStack Query, Framer Motion, Cloud Storage & CDN. Tempo de entrega: 10 Dias.
+- **Instituto Cestari** (https://institutocestari.com.br): Plataforma médica institucional de alta autoridade com otimização avançada para motores de busca generativa (GEO) e SEO técnico. Stack: React, TypeScript, Schema.org JSON-LD (MedicalBusiness/MedicalOrganization), Core Web Vitals, Design System responsivo. Tempo de entrega: 12 Dias.
 
 ## Diferenciais Técnicos e Conformidade
 - **Velocidade de Entrega:** Até 3x mais rápido utilizando inteligência artificial em 100% dos processos de engenharia.

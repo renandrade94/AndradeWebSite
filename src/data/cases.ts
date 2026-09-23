@@ -235,7 +235,7 @@ export const casesData: CaseStudyItem[] = [
         title: 'Website Dinâmico com Gestão de Mídias em Tempo Real e Captação de Leads',
         client: 'Tempero | Produtora Audiovisual',
         segment: 'Audiovisual, Mídia & Entretenimento',
-        badge: 'Website Dinâmico & Captação de Leads',
+        badge: 'Website/SEO e CMS',
         challenge: 'A produtora necessitava de uma plataforma digital dinâmica e de alto impacto visual capaz de exibir seu portfólio de filmes e produções em tempo real, permitindo à equipe atualizar fotos, vídeos e links instantaneamente, além de otimizar a captação direta de leads e novas oportunidades de projetos.',
         solution: 'Desenvolvimento de website dinâmico de alto desempenho com sistema inteligente de gestão de fotos e vídeos atualizados em tempo real, controle dinâmico e centralizado de todos os links e botões da página, e canais integrados para captação e conversão de leads.',
         results: [
@@ -245,7 +245,7 @@ export const casesData: CaseStudyItem[] = [
         ],
         metrics: [
           { label: 'Tempo de Entrega', value: '10 Dias' },
-          { label: 'Solução', value: 'Website & SEO' },
+          { label: 'Solução', value: 'Website/SEO e CMS' },
           { label: 'Status', value: 'Em Produção' }
         ],
         testimonial: {
@@ -258,7 +258,7 @@ export const casesData: CaseStudyItem[] = [
         title: 'Dynamic Web Platform with Real-Time Media Management & Lead Generation',
         client: 'Tempero | Audiovisual Production',
         segment: 'Media, Film & Entertainment',
-        badge: 'Dynamic Web & Lead Generation',
+        badge: 'Website/SEO & CMS',
         challenge: 'The audiovisual production house required a high-impact dynamic web platform to showcase cinematic films and media in real time, empowering their internal team to update media assets and links on the fly and capture inbound project leads.',
         solution: 'Built a high-performance dynamic platform featuring real-time photo/video feeds, centralized link and CTA management, and optimized contact funnels for direct lead capture.',
         results: [
@@ -268,7 +268,7 @@ export const casesData: CaseStudyItem[] = [
         ],
         metrics: [
           { label: 'Delivery Time', value: '10 Days' },
-          { label: 'Solution', value: 'Website & SEO' },
+          { label: 'Solution', value: 'Website/SEO & CMS' },
           { label: 'Status', value: 'Live in Prod' }
         ],
         testimonial: {
@@ -281,7 +281,7 @@ export const casesData: CaseStudyItem[] = [
         title: 'Plataforma Web Dinámica con Gestión de Medios en Tiempo Real y Captación de Leads',
         client: 'Tempero | Productora Audiovisual',
         segment: 'Audiovisual, Medios & Entretenimiento',
-        badge: 'Web Dinámica & Captación de Leads',
+        badge: 'Website/SEO y CMS',
         challenge: 'La productora requería una plataforma web de alto impacto visual para proyectar su catálogo de producciones en tiempo real, permitiendo a su equipo actualizar fotos, videos y enlaces al instante con foco en la captación de nuevos clientes.',
         solution: 'Desarrollo de una plataforma web dinámica con feed de fotos y videos en tiempo real, gestión total de enlaces y canales optimizados para la captación y conversión de leads.',
         results: [
@@ -291,13 +291,102 @@ export const casesData: CaseStudyItem[] = [
         ],
         metrics: [
           { label: 'Tiempo de Entrega', value: '10 Días' },
-          { label: 'Solución', value: 'Website & SEO' },
+          { label: 'Solución', value: 'Website/SEO y CMS' },
           { label: 'Estado', value: 'En Producción' }
         ],
         testimonial: {
           quote: 'Andrade entregó una plataforma dinámica que elevó nuestro posicionamiento audiovisual. La gestión de medios en tiempo real y la agilidad en la captación de clientes transformaron nuestra respuesta comercial.',
           author: 'Tempero Produtora',
           role: 'Productora Audiovisual'
+        }
+      }
+    }
+  },
+  {
+    id: 'instituto-cestari',
+    segmentKey: 'healthtech',
+    websiteUrl: 'https://institutocestari.com.br',
+    logoUrl: '/images/clients/instituto-cestari-logo.png',
+    technologies: [
+      'React & Vite',
+      'TypeScript',
+      'Schema.org JSON-LD',
+      'Generative Engine Optimization (GEO)',
+      'SEO Técnico & Core Web Vitals',
+      'Design System Responsivo'
+    ],
+    featured: true,
+    locales: {
+      pt: {
+        title: 'Website Institucional de Alta Performance com Otimização GEO & SEO',
+        client: 'Instituto Cestari',
+        segment: 'Saúde Especializada & Clínica Médica',
+        badge: 'Website Institucional GEO & SEO',
+        challenge: 'O Instituto Cestari necessitava de uma presença digital de excelência médica para consolidar sua autoridade em saúde especializada, apresentar tratamentos e equipe médica de forma clara e elegante, e garantir indexação prioritária nos motores de busca tradicionais (Google) e assistentes de Inteligência Artificial generativa (GEO - ChatGPT, Perplexity, Claude, Gemini).',
+        solution: 'Desenvolvimento e publicação em tempo recorde de website institucional moderno com arquitetura ultrarrápida em React/TypeScript, dados estruturados Schema.org completos (MedicalBusiness e MedicalOrganization), otimização estrita de Core Web Vitals e canais diretos para agendamento e atendimento ao paciente.',
+        results: [
+          'Website institucional médico de alto padrão com tempo de carregamento ultrarrápido e design responsivo.',
+          'Estrutura semântica avançada para citação prioritária em motores de IA generativa (GEO) e topo do Google.',
+          'Jornada do paciente humanizada com acesso rápido a especialidades, corpo clínico e canais diretos de contato.'
+        ],
+        metrics: [
+          { label: 'Tempo de Entrega', value: '12 Dias' },
+          { label: 'Solução', value: 'Website GEO & SEO' },
+          { label: 'Status', value: 'Em Produção' }
+        ],
+        websiteUrl: 'https://institutocestari.com.br',
+        testimonial: {
+          quote: 'A Andrade Serviços de Tecnologia entregou um website institucional impecável em apenas 12 dias. A combinação de elegância visual, velocidade e estruturação semântica para motores de busca e inteligência artificial superou nossas expectativas.',
+          author: 'Instituto Cestari',
+          role: 'Saúde Especializada'
+        }
+      },
+      en: {
+        title: 'High-Performance Institutional Website & Advanced GEO/SEO Optimization',
+        client: 'Instituto Cestari',
+        segment: 'Specialized Healthcare & Medical Clinic',
+        badge: 'GEO & SEO Institutional Website',
+        challenge: 'Instituto Cestari required an institutional digital presence of medical excellence to establish its authority, present specialized clinical care and staff, and achieve prominent visibility across Google and generative AI search engines (GEO).',
+        solution: 'Engineered a modern, high-speed institutional medical platform in React/TypeScript with full semantic Schema.org markup (MedicalBusiness/MedicalOrganization), Core Web Vitals optimization, and conversion-focused patient communication pathways, delivered in 12 days.',
+        results: [
+          'High-authority medical platform with instant loading speeds and responsive mobile design.',
+          'Full semantic knowledge graph for priority visibility in Generative Engine Optimization (GEO) and Google.',
+          'Seamless patient journey with intuitive presentation of clinical specialties and direct booking channels.'
+        ],
+        metrics: [
+          { label: 'Delivery Time', value: '12 Days' },
+          { label: 'Solution', value: 'GEO & SEO Website' },
+          { label: 'Status', value: 'Live in Prod' }
+        ],
+        websiteUrl: 'https://institutocestari.com.br',
+        testimonial: {
+          quote: 'Andrade delivered an impeccable institutional website in just 12 days. The combination of visual elegance, performance, and semantic optimization for search and AI exceeded our expectations.',
+          author: 'Instituto Cestari',
+          role: 'Specialized Healthcare'
+        }
+      },
+      es: {
+        title: 'Sitio Web Institucional de Alto Rendimiento y Posicionamiento GEO/SEO',
+        client: 'Instituto Cestari',
+        segment: 'Salud Especializada & Clínica Médica',
+        badge: 'Sitio Web Institucional GEO & SEO',
+        challenge: 'El Instituto Cestari requería una presencia digital institucional de excelencia médica para consolidar su autoridad en salud especializada, comunicar sus tratamientos y asegurar máxima visibilidad en Google y motores de Inteligencia Artificial (GEO).',
+        solution: 'Desarrollo de un sitio web institucional moderno en React/TypeScript con arquitectura semántica Schema.org completa (MedicalBusiness), optimización exhaustiva de Core Web Vitals y canales directos para pacientes, entregado en 12 días.',
+        results: [
+          'Sitio web médico institucional de alto estándar con navegación instantánea y diseño responsive.',
+          'Estructura semántica completa para consolidar autoridad médica en Google y motores de IA (GEO).',
+          'Experiencia ágil y directa para contacto y solicitud de citas médicas.'
+        ],
+        metrics: [
+          { label: 'Tiempo de Entrega', value: '12 Días' },
+          { label: 'Solución', value: 'Sitio Web GEO & SEO' },
+          { label: 'Estado', value: 'En Producción' }
+        ],
+        websiteUrl: 'https://institutocestari.com.br',
+        testimonial: {
+          quote: 'Andrade entregó un sitio web institucional impecable en solo 12 días. La combinación de elegancia visual, velocidad y optimización semántica para IA y buscadores superó nuestras expectativas.',
+          author: 'Instituto Cestari',
+          role: 'Salud Especializada'
         }
       }
     }

@@ -89,14 +89,24 @@ Enquanto consultorias tradicionais demandam meses de planejamento em cascata e b
 - **Tempo de Entrega:** 4 Dias.
 - **Tecnologias:** React & Vite, TypeScript, Schema.org JSON-LD, Core Web Vitals, Google Analytics, CSS / Design System.
 
-### Case 3: Tempero (agtemp.com)
-- **Cliente:** Tempero Produtora Audiovisual
+### Case 3: Tempero Produtora / Agtemp (agtemp.com)
+- **Cliente:** Tempero | Produtora Audiovisual
 - **Segmento:** Audiovisual & Mídia
 - **Website Oficial:** https://agtemp.com
-- **Desafio:** Criar uma plataforma interativa de exibição de portfólio cinematográfico com painel de gerenciamento de conteúdo (CMS) em tempo real.
-- **Solução:** Aplicação web interativa com Framer Motion, banco de dados PostgreSQL para gestão dinâmica de campanhas e integração com CDN para streaming ultrarrápido de vídeos e imagens.
+- **Solução:** Website/SEO e CMS
+- **Desafio:** Criar uma plataforma interativa de alto impacto visual e exibição de portfólio cinematográfico com painel de gerenciamento de conteúdo (CMS) em tempo real, SEO avançado e canais de captação de leads.
+- **Implementação:** Aplicação web interativa com React, Vite, Framer Motion, banco de dados PostgreSQL para gestão dinâmica de campanhas/mídias em tempo real (CMS) e integração com CDN para streaming ultrarrápido de vídeos e imagens com SEO técnico.
 - **Tempo de Entrega:** 10 Dias.
 - **Tecnologias:** React & Vite, PostgreSQL, TanStack Query, Framer Motion, Cloud Storage & CDN, Painel CMS em Tempo Real.
+
+### Case 4: Instituto Cestari
+- **Cliente:** Instituto Cestari
+- **Segmento:** Saúde Especializada & Clínica Médica
+- **Website Oficial:** https://institutocestari.com.br
+- **Desafio:** Desenvolver uma presença digital institucional de excelência médica para consolidar autoridade científica, apresentar tratamentos e equipe médica, e garantir indexação prioritária nos motores de busca tradicionais (Google) e inteligência artificial generativa (GEO - ChatGPT, Perplexity, Claude, Gemini).
+- **Solução:** Website institucional de alta autoridade desenvolvido em React com TypeScript 100% tipado, metadados semânticos avançados Schema.org (MedicalBusiness/MedicalOrganization), conformidade com Core Web Vitals e canais diretos para agendamento e atendimento ao paciente.
+- **Tempo de Entrega:** 12 Dias.
+- **Tecnologias:** React & Vite, TypeScript, Schema.org JSON-LD, Generative Engine Optimization (GEO), Core Web Vitals, Design System Responsivo.
 
 ---
 
