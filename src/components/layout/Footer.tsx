@@ -67,6 +67,7 @@ export const Footer = () => {
                 { label: t('nav.cases'), to: '/cases' },
                 { label: t('nav.about'), to: '/sobre' },
                 { label: t('nav.contact'), to: '/contato' },
+                { label: language === 'en' ? 'Privacy Policy' : language === 'es' ? 'Privacidad' : 'Privacidade', to: '/privacy' },
               ].map((item) => (
                 <li key={item.to}>
                   <Link

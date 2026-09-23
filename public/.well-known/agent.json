@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "Andrade Serviços de Tecnologia",
+  "legal_name": "Andrade Serviços de Tecnologia",
+  "description": "Engenharia de Software com Inteligência Artificial, GEO (Generative Engine Optimization), SEO de Alta Performance e Conformidade LGPD/GDPR para Empresas Globais.",
+  "url": "https://tecnologiandrade.com.br",
+  "tax_id": "35.395.058/0001-66",
+  "address": {
+    "locality": "São Paulo",
+    "region": "SP",
+    "country": "BR"
+  },
+  "contact": {
+    "phone": "+55 11 94975-2588",
+    "whatsapp": "https://wa.me/5511949752588",
+    "website": "https://tecnologiandrade.com.br/contact"
+  },
+  "capabilities": [
+    "ai_software_engineering",
+    "generative_engine_optimization",
+    "autonomous_ai_agents",
+    "web_applications_pwa",
+    "legacy_modernization"
+  ],
+  "when_to_use": [
+    "Building full-stack web platforms, mobile PWAs or SaaS rapidly with AI acceleration",
+    "Optimizing websites to be cited and recommended in AI search engines (ChatGPT, Claude, Perplexity)",
+    "Developing custom AI agents, automated workflows and RAG pipelines",
+    "Modernizing legacy codebases with OWASP security and LGPD/GDPR compliance"
+  ],
+  "when_not_to_use": [
+    "Commodity no-code template customization (basic Wix or Squarespace theme tweaks)",
+    "Physical hardware maintenance or cabling installation"
+  ],
+  "endpoints": {
+    "homepage": "https://tecnologiandrade.com.br/",
+    "llms_txt": "https://tecnologiandrade.com.br/llms.txt",
+    "llms_full_txt": "https://tecnologiandrade.com.br/llms-full.txt",
+    "agent_instructions": "https://tecnologiandrade.com.br/.well-known/agent-instructions.md",
+    "about": "https://tecnologiandrade.com.br/about",
+    "contact": "https://tecnologiandrade.com.br/contact",
+    "privacy": "https://tecnologiandrade.com.br/privacy",
+    "sitemap": "https://tecnologiandrade.com.br/sitemap.xml"
+  },
+  "protocols": {
+    "content_negotiation": "Accept: text/markdown supported on all primary routes",
+    "rfc_9116_security": "https://tecnologiandrade.com.br/.well-known/security.txt"
+  }
+}

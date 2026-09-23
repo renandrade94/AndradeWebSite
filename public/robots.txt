@@ -40,7 +40,13 @@ Allow: /
 User-agent: Claude-Web
 Allow: /
 
+User-agent: anthropic-ai
+Allow: /
+
 User-agent: Google-Extended
+Allow: /
+
+User-agent: DeepSeekBot
 Allow: /
 
 User-agent: Applebot
@@ -52,6 +58,9 @@ Allow: /
 User-agent: Meta-ExternalAgent
 Allow: /
 
+User-agent: facebookexternalhit
+Allow: /
+
 User-agent: Amazonbot
 Allow: /
 
@@ -61,10 +70,18 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-# AI Information Standards
-# See https://llmstxt.org
+User-agent: cohere-ai
+Allow: /
+
+User-agent: ora-agent
+Allow: /
+
+# AI Information Standards & Machine-Readable Declarations
+# See https://llmstxt.org & https://acceptmarkdown.com
 # llms.txt: https://tecnologiandrade.com.br/llms.txt
 # llms-full.txt: https://tecnologiandrade.com.br/llms-full.txt
+# agent-instructions: https://tecnologiandrade.com.br/.well-known/agent-instructions.md
+# agent-manifest: https://tecnologiandrade.com.br/.well-known/agent.json
 
 # Sitemap Location
 Sitemap: https://tecnologiandrade.com.br/sitemap.xml

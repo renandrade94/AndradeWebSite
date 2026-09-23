@@ -16,6 +16,7 @@ import { ServiceDetailPage } from './pages/ServiceDetailPage';
 import { AboutPage } from './pages/AboutPage';
 import { CasesPage } from './pages/CasesPage';
 import { ContactPage } from './pages/ContactPage';
+import { PrivacyPage } from './pages/PrivacyPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 
 import './styles/index.css';
@@ -39,7 +40,11 @@ export function App() {
               <Route path="/cases" element={<CasesPage />} />
               <Route path="/clientes" element={<CasesPage />} />
               <Route path="/sobre" element={<AboutPage />} />
+              <Route path="/about" element={<AboutPage />} />
               <Route path="/contato" element={<ContactPage />} />
+              <Route path="/contact" element={<ContactPage />} />
+              <Route path="/privacy" element={<PrivacyPage />} />
+              <Route path="/privacidade" element={<PrivacyPage />} />
               <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </main>

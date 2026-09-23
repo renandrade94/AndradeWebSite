@@ -142,6 +142,7 @@ export const SEO = ({
               '@type': 'ContactPoint',
               telephone: '+55 11 94975-2588',
               contactType: 'customer service',
+              url: `${window.location.origin}/contato`,
               areaServed: ['BR', 'US', 'EU', 'LATAM'],
               availableLanguage: ['Portuguese', 'English', 'Spanish'],
             },
