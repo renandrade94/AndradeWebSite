@@ -202,6 +202,14 @@ describe('Priority 5: Markdown Content Negotiation (acceptmarkdown.com)', () => 
     assert.match(unknownHtmlRes.headers.get('content-type') || '', /text\/html/);
     assert.equal(unknownHtmlRes.headers.get('vary'), 'Accept');
   });
+
+  it('should configure run_worker_first: true in wrangler.jsonc for Cloudflare Workers routing', () => {
+    const wranglerPath = path.join(rootDir, 'wrangler.jsonc');
+    assert.ok(fs.existsSync(wranglerPath), 'wrangler.jsonc must exist');
+    const content = fs.readFileSync(wranglerPath, 'utf8');
+    // Simple json parse removing possible comments or direct match
+    assert.match(content, /"run_worker_first":\s*true/, 'wrangler.jsonc must have run_worker_first set to true');
+  });
 });
 
 describe('Priority 6 & 8: JSON-LD Structured Data & Organization Completeness', () => {

@@ -53,6 +53,7 @@ export async function onRequest(context: PagesContext): Promise<Response> {
           'Content-Type': 'text/markdown; charset=utf-8',
           'Vary': 'Accept',
           'Cache-Control': 'public, max-age=3600',
+          'Cloudflare-CDN-Cache-Control': 'no-store',
         },
       });
     }
