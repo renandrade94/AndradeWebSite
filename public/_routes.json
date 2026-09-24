@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "include": [
+    "/*"
+  ],
+  "exclude": [
+    "/assets/*",
+    "/images/*",
+    "/.well-known/*",
+    "/favicon.svg",
+    "/favicon.ico",
+    "/favicon.png",
+    "/manifest.json",
+    "/robots.txt",
+    "/sitemap.xml",
+    "/llms.txt",
+    "/llms-full.txt"
+  ]
+}

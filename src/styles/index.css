@@ -129,6 +129,12 @@ a {
   padding: 0 1.5rem;
 }
 
+@media (max-width: 640px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
 .section-padding {
   padding: clamp(3.5rem, 6vw, 5.5rem) 0;
 }
@@ -155,6 +161,7 @@ a {
 .badge-pill {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.45rem;
   padding: 0.35rem 0.85rem;
   background: rgba(255, 255, 255, 0.04);
@@ -164,6 +171,10 @@ a {
   font-weight: 600;
   color: #d4d4d8;
   letter-spacing: 0.01em;
+  text-align: center;
+  line-height: 1.35;
+  white-space: nowrap;
+  box-sizing: border-box;
 }
 
 .badge-pill svg {
@@ -175,6 +186,7 @@ a {
 .badge-tag {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   padding: 0.2rem 0.6rem;
   background: #181d2b;
   border: 1px solid #273147;
@@ -183,6 +195,10 @@ a {
   font-weight: 600;
   color: #94a3b8;
   font-family: var(--font-mono);
+  text-align: center;
+  line-height: 1.35;
+  white-space: nowrap;
+  box-sizing: border-box;
 }
 
 /* Status Indicator Dot (Solid, No Glow) */
@@ -276,6 +292,28 @@ a {
   }
 }
 
+/* Case Studies Metric Grid */
+.case-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.85rem;
+  margin-top: 1.25rem;
+}
+
+@media (max-width: 640px) {
+  .case-metrics-grid {
+    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+    gap: 0.65rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .case-metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}
+
 /* Sleek Compact Horizontal CTA Card */
 .cta-horizontal-card {
   display: flex;
@@ -295,5 +333,28 @@ a {
     text-align: left;
     gap: 1.25rem;
     padding: 1.5rem;
+  }
+}
+
+/* Category Filter Carousel for TechStack */
+.tech-carousel-track {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  overflow-x: auto;
+  padding: 0.35rem 0.5rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x proximity;
+}
+
+.tech-carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 868px) {
+  .tech-carousel-track {
+    justify-content: center;
   }
 }

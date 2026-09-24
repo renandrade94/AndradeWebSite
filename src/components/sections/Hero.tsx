@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Zap, Globe, Search } from 'lucide-react';
+import { Sparkles, Zap, Globe, Search, Shield } from 'lucide-react';
 import { WhatsAppIcon } from '../common/WhatsAppIcon';
 import { createWhatsAppUrl } from '../../data/companyInfo';
 import { useLanguage } from '../../context/LanguageContext';
@@ -18,6 +18,14 @@ export const Hero: React.FC = () => {
       }}
     >
       <div className="container" style={{ textAlign: 'center' }}>
+        {/* Brand Badge */}
+        <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.25rem' }}>
+          <div className="badge-pill">
+            <Sparkles size={14} color="#2dd4bf" />
+            <span>Andrade Serviços de Tecnologia</span>
+          </div>
+        </div>
+
         {/* Main Headline (Solid White, High Contrast WCAG AAA) */}
         <h1
           style={{
@@ -30,6 +38,9 @@ export const Hero: React.FC = () => {
             color: '#ffffff',
           }}
         >
+          <span style={{ position: 'absolute', width: 1, height: 1, padding: 0, margin: -1, overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: 0 }}>
+            Andrade Serviços de Tecnologia —{' '}
+          </span>
           {t('hero.title_prefix')}
           <span style={{ color: '#2dd4bf' }}>{t('hero.title_highlight')}</span>
         </h1>

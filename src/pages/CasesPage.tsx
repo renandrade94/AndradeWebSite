@@ -11,6 +11,8 @@ import souriantLogo from '../assets/images/souriant-logo.png';
 import temperoLogo from '../assets/images/tempero-logo.png';
 import cestariLogo from '../assets/images/instituto-cestari-logo.png';
 
+const isNumericMetric = (val: string) => /^[\d+~<>]+\s*[a-zA-Z%]+$/.test(val.trim());
+
 export const CasesPage: React.FC = () => {
   const { language, t } = useLanguage();
   const [activeFilter, setActiveFilter] = useState<string>('all');
@@ -174,7 +176,7 @@ export const CasesPage: React.FC = () => {
                 key={caseItem.id}
                 className="glass-card"
                 style={{
-                  padding: 'clamp(2rem, 4vw, 3.25rem)',
+                  padding: 'clamp(1.25rem, 3.5vw, 3rem)',
                   borderRadius: 'var(--radius-xl)',
                   backgroundColor: 'var(--bg-dark-surface)',
                   borderTop: '2px solid #2dd4bf',
@@ -237,11 +239,11 @@ export const CasesPage: React.FC = () => {
                         {loc.client.charAt(0)}
                       </div>
                     )}
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem', minWidth: 0 }}>
                       <span style={{ fontSize: '1.25rem', color: '#ffffff', fontWeight: 800, lineHeight: 1.2 }}>
                         {loc.client}
                       </span>
-                      <div>
+                      <div style={{ display: 'flex' }}>
                         <span
                           style={{
                             fontSize: '0.78rem',
@@ -249,10 +251,14 @@ export const CasesPage: React.FC = () => {
                             color: '#2dd4bf',
                             backgroundColor: 'rgba(4, 78, 70, 0.35)',
                             border: '1px solid #0f766e',
-                            padding: '0.2rem 0.65rem',
+                            padding: '0.25rem 0.75rem',
                             borderRadius: 'var(--radius-full)',
                             fontFamily: 'var(--font-mono)',
                             display: 'inline-block',
+                            textAlign: 'center',
+                            lineHeight: 1.35,
+                            maxWidth: '100%',
+                            boxSizing: 'border-box',
                           }}
                         >
                           {loc.segment}
@@ -315,41 +321,49 @@ export const CasesPage: React.FC = () => {
                     </h2>
 
                     {/* Metrics Row */}
-                    <div
-                      style={{
-                        display: 'grid',
-                        gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
-                        gap: '1rem',
-                        marginTop: '1.25rem',
-                      }}
-                    >
-                      {loc.metrics.map((metric, mIdx) => (
-                        <div
-                          key={mIdx}
-                          style={{
-                            padding: '1rem 1.25rem',
-                            backgroundColor: '#181d2b',
-                            borderRadius: 'var(--radius-md)',
-                            border: '1px solid var(--border-hairline)',
-                          }}
-                        >
+                    <div className="case-metrics-grid">
+                      {loc.metrics.map((metric, mIdx) => {
+                        const isNumeric = isNumericMetric(metric.value);
+                        return (
                           <div
+                            key={mIdx}
                             style={{
-                              fontSize: '1.6rem',
-                              fontWeight: 900,
-                              fontFamily: 'var(--font-mono)',
-                              color: '#2dd4bf',
-                              lineHeight: 1.1,
-                              marginBottom: '0.25rem',
+                              padding: '0.85rem 1rem',
+                              backgroundColor: '#181d2b',
+                              borderRadius: 'var(--radius-md)',
+                              border: '1px solid var(--border-hairline)',
+                              display: 'flex',
+                              flexDirection: 'column',
+                              justifyContent: 'center',
+                              minWidth: 0,
+                              overflow: 'hidden',
                             }}
                           >
-                            {metric.value}
+                            <div
+                              style={{
+                                fontSize: isNumeric
+                                  ? 'clamp(1.25rem, 2.5vw, 1.55rem)'
+                                  : metric.value.length > 14
+                                    ? 'clamp(0.92rem, 2vw, 1.05rem)'
+                                    : 'clamp(1rem, 2.2vw, 1.2rem)',
+                                fontWeight: isNumeric ? 900 : 800,
+                                fontFamily: isNumeric ? 'var(--font-mono)' : 'var(--font-sans)',
+                                color: '#2dd4bf',
+                                lineHeight: isNumeric ? 1.15 : 1.25,
+                                letterSpacing: isNumeric ? 'normal' : '-0.015em',
+                                wordBreak: 'break-word',
+                                overflowWrap: 'break-word',
+                                marginBottom: '0.25rem',
+                              }}
+                            >
+                              {metric.value}
+                            </div>
+                            <div style={{ fontSize: '0.78rem', color: '#cbd5e1', fontWeight: 600, letterSpacing: '0.01em' }}>
+                              {metric.label}
+                            </div>
                           </div>
-                          <div style={{ fontSize: '0.8rem', color: '#cbd5e1', fontWeight: 600 }}>
-                            {metric.label}
-                          </div>
-                        </div>
-                      ))}
+                        );
+                      })}
                     </div>
                   </div>
                 </div>

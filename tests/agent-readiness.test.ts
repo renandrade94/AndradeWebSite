@@ -138,6 +138,70 @@ describe('Priority 5: Markdown Content Negotiation (acceptmarkdown.com)', () => 
     assert.equal(response.status, 200, 'Status must be 200');
     assert.equal(response.headers.get('vary'), 'Accept', 'Vary header must be Accept');
   });
+
+  it('should have public/_routes.json including /* so Cloudflare Pages routes / to functions', () => {
+    const routesPath = path.join(rootDir, 'public', '_routes.json');
+    assert.ok(fs.existsSync(routesPath), '_routes.json must exist in public directory');
+    const routes = JSON.parse(fs.readFileSync(routesPath, 'utf8'));
+    assert.ok(Array.isArray(routes.include) && routes.include.includes('/*'), 'include must include /*');
+    assert.ok(Array.isArray(routes.exclude) && routes.exclude.includes('/assets/*'), 'exclude must contain /assets/*');
+  });
+
+  it('should verify functions/_middleware.ts handles Markdown negotiation and 404s for Cloudflare Pages', async () => {
+    const { onRequest } = await import('../functions/_middleware.ts');
+
+    // 1. Homepage Markdown negotiation
+    const mdReq = new Request('https://tecnologiandrade.com.br/', {
+      headers: { Accept: 'text/markdown' },
+    });
+    const mdRes = await onRequest({
+      request: mdReq,
+      next: async () => new Response('<html></html>', { status: 200 }),
+    });
+    assert.equal(mdRes.status, 200);
+    assert.match(mdRes.headers.get('content-type') || '', /text\/markdown/);
+    assert.equal(mdRes.headers.get('vary'), 'Accept');
+    const mdBody = await mdRes.text();
+    assert.ok(mdBody.includes('Andrade Serviços de Tecnologia'));
+
+    // 2. Homepage HTML passthrough with Vary: Accept
+    const htmlReq = new Request('https://tecnologiandrade.com.br/', {
+      headers: { Accept: 'text/html' },
+    });
+    const htmlRes = await onRequest({
+      request: htmlReq,
+      next: async () => new Response('<!doctype html><html></html>', {
+        status: 200,
+        headers: { 'Content-Type': 'text/html; charset=utf-8' },
+      }),
+    });
+    assert.equal(htmlRes.status, 200);
+    assert.equal(htmlRes.headers.get('vary'), 'Accept');
+
+    // 3. Unknown route with Markdown
+    const unknownMdReq = new Request('https://tecnologiandrade.com.br/random-unknown-agent-probe', {
+      headers: { Accept: 'text/markdown' },
+    });
+    const unknownMdRes = await onRequest({
+      request: unknownMdReq,
+      next: async () => new Response('should not be called', { status: 200 }),
+    });
+    assert.equal(unknownMdRes.status, 404);
+    assert.match(unknownMdRes.headers.get('content-type') || '', /text\/markdown/);
+    assert.equal(unknownMdRes.headers.get('vary'), 'Accept');
+
+    // 4. Unknown route with HTML
+    const unknownHtmlReq = new Request('https://tecnologiandrade.com.br/random-unknown-browser-probe', {
+      headers: { Accept: 'text/html' },
+    });
+    const unknownHtmlRes = await onRequest({
+      request: unknownHtmlReq,
+      next: async () => new Response('should not be called', { status: 200 }),
+    });
+    assert.equal(unknownHtmlRes.status, 404);
+    assert.match(unknownHtmlRes.headers.get('content-type') || '', /text\/html/);
+    assert.equal(unknownHtmlRes.headers.get('vary'), 'Accept');
+  });
 });
 
 describe('Priority 6 & 8: JSON-LD Structured Data & Organization Completeness', () => {

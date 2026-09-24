@@ -217,14 +217,26 @@ export const InteractiveGeoDemo: React.FC = () => {
             }}
           >
             <div>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.25rem' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <Globe size={16} color="#2dd4bf" />
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '0.65rem', flexWrap: 'wrap', marginBottom: '1.25rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', minWidth: 0 }}>
+                  <Globe size={16} color="#2dd4bf" style={{ flexShrink: 0 }} />
                   <span style={{ fontSize: '0.82rem', fontWeight: 700, color: '#ffffff', letterSpacing: '0.04em' }}>
                     Google Search (SEO Tradicional)
                   </span>
                 </div>
-                <span className="badge-pill" style={{ fontSize: '0.7rem', padding: '0.15rem 0.5rem' }}>
+                <span
+                  className="badge-pill"
+                  style={{
+                    fontSize: '0.72rem',
+                    padding: '0.2rem 0.65rem',
+                    whiteSpace: 'nowrap',
+                    textAlign: 'center',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    display: 'inline-flex',
+                    flexShrink: 0,
+                  }}
+                >
                   1º Lugar Orgânico
                 </span>
               </div>
@@ -294,14 +306,26 @@ export const InteractiveGeoDemo: React.FC = () => {
             }}
           >
             <div>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.25rem' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <Bot size={16} color="#2dd4bf" />
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '0.65rem', flexWrap: 'wrap', marginBottom: '1.25rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', minWidth: 0 }}>
+                  <Bot size={16} color="#2dd4bf" style={{ flexShrink: 0 }} />
                   <span style={{ fontSize: '0.82rem', fontWeight: 700, color: '#ffffff', letterSpacing: '0.04em' }}>
                     {activePrompt.aiResult.engine}
                   </span>
                 </div>
-                <span className="badge-pill" style={{ fontSize: '0.7rem', padding: '0.15rem 0.5rem' }}>
+                <span
+                  className="badge-pill"
+                  style={{
+                    fontSize: '0.72rem',
+                    padding: '0.2rem 0.65rem',
+                    whiteSpace: 'nowrap',
+                    textAlign: 'center',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    display: 'inline-flex',
+                    flexShrink: 0,
+                  }}
+                >
                   Citação Direta
                 </span>
               </div>
