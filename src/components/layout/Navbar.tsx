@@ -174,6 +174,7 @@ export const Navbar = () => {
           {/* Mobile Menu Hamburger */}
           <div className="show-mobile-flex" style={{ alignItems: 'center' }}>
             <button
+              type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               style={{
                 background: 'transparent',
@@ -185,7 +186,9 @@ export const Navbar = () => {
                 alignItems: 'center',
                 justifyContent: 'center',
               }}
-              aria-label="Abrir Menu"
+              aria-label={mobileMenuOpen ? 'Fechar Menu de Navegação' : 'Abrir Menu de Navegação'}
+              aria-expanded={mobileMenuOpen}
+              aria-controls="mobile-nav-drawer"
             >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -196,6 +199,10 @@ export const Navbar = () => {
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
         <div
+          id="mobile-nav-drawer"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Menu de Navegação Mobile"
           style={{
             position: 'fixed',
             top: 'var(--header-height)',

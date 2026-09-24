@@ -35,6 +35,8 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({ dropUp = fal
         type="button"
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Selecionar Idioma / Select Language"
+        aria-haspopup="listbox"
+        aria-expanded={isOpen}
         style={{
           display: 'flex',
           alignItems: 'center',
@@ -65,6 +67,8 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({ dropUp = fal
 
       {isOpen && (
         <div
+          role="listbox"
+          aria-label="Opções de idioma"
           style={{
             position: 'absolute',
             ...(dropUp ? { bottom: 'calc(100% + 8px)' } : { top: 'calc(100% + 6px)' }),
@@ -89,6 +93,8 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({ dropUp = fal
               <button
                 key={l.code}
                 type="button"
+                role="option"
+                aria-selected={isSelected}
                 onClick={() => {
                   setLanguage(l.code);
                   setIsOpen(false);
